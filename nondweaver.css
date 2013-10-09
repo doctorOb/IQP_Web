@@ -1,0 +1,13 @@
+
+#sidebar1 td  {
+	opacity : .9;
+}
+#topbar td {
+	opacity : .9;
+}
+#topbar td:hover{
+  opacity : .6;
+}
+#sidebar1 td:hover{
+	opacity : .6;
+}
