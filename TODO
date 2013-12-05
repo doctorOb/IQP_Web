@@ -1,0 +1,26 @@
+On IE: images do not load. 
+
+IMDC logo:
+	> use same font as on the IMDC page. 'Century Gothic'. Black text, light grey box that contrasts well.
+
+World Map:
+	> renesaisce europe uses different font then other pages.
+	> antiquity europe 404s. (800 - 600 BC)
+
+IQP reports:
+	> remove spaces before the 2012-2013 table
+	> rapier: 'in' and 'the' should not be capital in link title.
+
+Construction:
+	> transform rapier image to display vertically next to the helmet.
+	> 'back to replica construction' looses ROOT url, goes to wpi.edu/makingOf.html
+	> All links on replica construction page are broken.
+
+References:
+	> add a 2 or 3 links and books to references section.
+	> create a 'making of website' v.3 document (to talk about our changes and stuff)
+
+Misc:
+	> Remove underline on all headers.
+
+
