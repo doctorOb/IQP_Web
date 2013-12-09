@@ -5730,10 +5730,14 @@ Form.EventObserver = Class.create(Abstract.EventObserver, {
     event.eventName = eventName;
     event.memo = memo || { };
 
-    if (document.createEvent)
-      element.dispatchEvent(event);
-    else
-      element.fireEvent(event.eventType, event);
+    try {
+      if (document.createEvent)
+        element.dispatchEvent(event);
+      else
+        element.fireEvent(event.eventType, event);
+    } catch (e) {
+      
+    }
 
     return Event.extend(event);
   }

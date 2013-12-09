@@ -689,7 +689,7 @@ Object.extend(String.prototype, (function() {
   }
 
   function unfilterJSON(filter) {
-    return this.replace(filter || Prototype.JSONFilter, '$1');
+    return this.replace(filter || ONFilter, '$1');
   }
 
   function isJSON() {
@@ -5729,11 +5729,14 @@ Form.EventObserver = Class.create(Abstract.EventObserver, {
 
     event.eventName = eventName;
     event.memo = memo || { };
-
-    if (document.createEvent)
-      element.dispatchEvent(event);
-    else
-      element.fireEvent(event.eventType, event);
+    try{
+      if (document.createEvent)
+        element.dispatchEvent(event);
+      else
+        element.fireEvent(event.eventType, event);
+    } catch(e) {
+      console.log('caught');
+    }
 
     return Event.extend(event);
   }
