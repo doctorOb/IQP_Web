@@ -2,7 +2,7 @@
 {
   var forEach = Array.prototype.forEach;  
 
-  var replaceLinks = function(elem, ind, arr)
+  document.ROO_URL = "http://www.me.wpi.edu/research/IMDC/IQP%20Website";var replaceLinks = function(elem, ind, arr)
   {
     if (elem.hasAttribute("src")) 
     { 
